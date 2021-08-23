@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithm-2021.8.23-8.29.cpp" />
+    <ClCompile Include="No. 2908 상수.cpp" />
+    <ClCompile Include="No. 10872 팩토리얼 .cpp" />
+    <ClCompile Include="No. 1193 분수찾기.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
