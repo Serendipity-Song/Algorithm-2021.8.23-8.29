@@ -1,35 +1,30 @@
-﻿
-
-#include <iostream>
-using namespace std;
-#include <cmath>
-
-
-int main(){
-
-	int num1;
-	int num2;
-	int snum1 = 0;
-	int snum2=0;
-
-	cin >> num1 >> num2;
-
-
-		for (int i = 0; i < 3; i++) {
-
-		snum1[i] += num1 % 10;
-
-		}
-
-		for (int i = 0; i < 3; i++) {
-
-		snum2 += num2 % 10;
-
-		}
-
-
-		if (snum1 > snum2)
-			cout << snum1;
-		else cout << snum2;
-
-}
+﻿//
+//
+//#include <iostream>
+//using namespace std;
+//
+//
+//int reverse(int n) {
+//	int sum = 0;
+//	sum += (n % 10) * 100;
+//	sum += ((n % 100) / 10) * 10;
+//	sum += n / 100;
+//
+//	return sum;
+//}
+//
+//
+//int main() {
+//
+//	int a, b;
+//	cin >> a >> b;
+//
+//	a = reverse(a);
+//	b = reverse(b);
+//
+//	if (a > b)
+//		cout << a;
+//	else
+//		cout << b;
+//}
+//
