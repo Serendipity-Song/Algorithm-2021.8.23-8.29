@@ -4,36 +4,37 @@ using namespace std;
 
 
 
-int main() {
-	int x; //순서
-	cin >> x;
+int hap(int k) {
 
-	//x가 5일때, 합이 4, 두번째
-	//2/4-2
-	//5가 왜 4인가
-	//1+2+3=6인데 3이상 6이하니까
-	//5-3=2   x-(1+2)=2, 
 
-	if (x = 1)
-		cout << 1;
+	int sum = 0;
+	int x = 0;
+	for (x = 0; sum < k; x++) {
 
-	else {
-		int sum;
-		for (int i = 1; i <= n; i++) {
-
-			for (int n = 1;sum<=n;n++) {
-				sum += n;
-			}
-
-		}
+		sum = sum + x;
 	}
 
-	for(int i=1;)
-	하나씩1 + 2 + 3 + 4 더하자;
+	return sum;
+}
 
-	더한 횟수가 갯수이고;
-	더한횟수 + 1이 각 자리 합;
-
+int xx(int k) {
 
 
+	int sum = 0;
+	int x = 0;
+	for (x = 0; sum < k; x++) {
+
+		sum = sum + x;
+	}
+
+	return x;
+}
+
+int main() {
+
+	int a;
+	cin >> a;
+
+	/*cout << hap(a) <<" "<< xx(a);*/
+	cout << a - hap(a) + xx(a) - 1 << "/" << xx(a) - (a - hap(a) + xx(a) - 1);
 }
