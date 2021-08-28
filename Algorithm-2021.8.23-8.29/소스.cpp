@@ -1,21 +1,19 @@
 #include <iostream>
+#include <utility>
 using namespace std;
 
-int fibo(int n) {
-	if (n == 0) {
-		return 0;
-	}
-	else if (n == 1) {
-		return 1;
-	}
-	else {
-		return fibo(n - 1) + fibo(n - 2);
-	}
-
-}
-
 int main() {
-	int n;
-	cin >> n;
-	cout << fibo(n) << '\n';
+	int num;
+	int rank = 1;
+	pair<int, int> arr[50];
+	cin >> num;
+	for (int i = 0; i < num; i++)
+		cin >> arr[i].first >> arr[i].second;
+	for (int j = 0; j < num; j++) {
+		for (int j = 0; j < num; j++)
+			if (arr[i].first < arr[j].first && arr[i].second < arr[j].second)
+				rank++;
+		cout << rank << ' ';
+		rank = 1;
+	}
 }
