@@ -11,13 +11,18 @@ int main() {
 
 	for (int i = 0; i < num; i++)
 		cin >> arr[i];
-	for (int i=num;i>1;i--)
-		for (int j=0; j+1<i<i;j++)
+
+	for (int i=num; i>1;i--)
+		for (int j=0;j+1<i;j++)
 			if (arr[j] > arr[j + 1])
-			{	tmp = arr[j];
+			{
+				tmp = arr[j];
 				arr[j] = arr[j + 1];
 				arr[j + 1] = tmp;
 			}
+
+
 	for (int i = 0; i < num; i++)
 		cout << arr[i] << '\n';
 }
+
